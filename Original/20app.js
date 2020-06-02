@@ -36,29 +36,34 @@
 
 let count = 0;
 while (count < 200) {
-  console.log(count);
-  count += 2;
+    console.log(count);
+    count += 2;
 }
 
 let friends = ["Mike", "John", "Joe", "Natalie"];
 for (var i = 0; i < friends.length; i++) {
-  console.log("The friend in the list is " + friends[i]);
+    console.log("The friend in the list is " + friends[i]);
 }
 //for(initialization;condition;post-expression)//
 for (var counter = 0; counter < 100; counter += 3) {
-  console.log("Inside the FOR loop  " + counter);
+    console.log("Inside the FOR loop  " + counter);
 }
 for (let x = 0; x < 100; x += 2) {
-  console.log(x);
+    console.log(x);
 }
-var myMarkSheet = { kumaran: 78, Murugavel: 79, Tarjan: 80, Kamalprasad: 76 };
-for (var marks in myMarkSheet) {
-  console.log("The marks for " + `${marks} is ${myMarkSheet[marks]}`);
+var myMarkSheet = {
+    kumaran: 78,
+    Murugavel: 79,
+    Tarjan: 80,
+    Kamalprasad: 76
+};
+for (var student in myMarkSheet) {
+    console.log("The marks for " + `${student} is ${myMarkSheet[student]}`);
 }
 
 //do while loop
 let x = 0;
 do {
-  x++;
-  console.log(x);
+    x++;
+    console.log(x);
 } while (x < 10);
