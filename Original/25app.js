@@ -14,6 +14,9 @@ friends.forEach(function (friend, index) {
   console.log(friend, index);
   //   console.log(friend);
 });
+friends.forEach(friend => {
+  console.log(friend);
+});
 
 //Using arrow function
 friends.forEach((friend, index) => {
