@@ -28,6 +28,10 @@
 let first = 'lauReNce';
 let last = 'sveKis';
 let initials = first[0] + last[0];
-let lastINitials = first.length;
+let lastINitials = last[0];
+let firstINtials = first[0];
+console.log(lastINitials);
+console.log(firstINtials);
+console.log()
 let lastInitials = first[first.length - 1] + last[last.length - 1]; // give the last letter of each string
-console.log (lastInitials);
+console.log(lastInitials);
