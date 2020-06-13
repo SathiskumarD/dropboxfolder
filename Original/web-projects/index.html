@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media=all">
+        span {
+            width: 175px;
+            display: block;
+            float: left;
+        }
+
+        input {
+            float: left;
+        }
+
+        p {
+            padding-top: 10px;
+            clear: all;
+        }
+
+        h2 {
+            padding-top: 20px;
+            clear: all;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my website to create form</h1>
+    <!-- Start of the form -->
+    <img src="images/firstimage.jpg" alt="Image">
+    <form method="post" action="form.aspx">
+        <h2>Email</h2>
+        <p><label><span>Email Input: </span><input type="email" name=emailInput required></label></p>
+        <h2>Telephone</h2>
+        <p><label><span>Telephone Input: </span><input type="tel" name=telephoneInput required></label></p>
+        <h2>URL</h2>
+        <p><label><span>URL: </span><input type="url" name=URLInput required></label></p>
+        <h2>Number Input</h2>
+        <p><label><span>Number Input: </span><input type="number" name=NumberInput required></label></p>
+        <h2>Range Input</h2>
+        <p><label><span>Range: </span><input type="range" name=RangeInput required=50></label>By default, the value
+            ranges between 0 and 50.value set to 50</p>
+
+        <p>
+            <label>Customer Name: <input type="text" id="customername" name="customername" maxlength="15"> </label> </p>
+        <fieldset>
+            <legend>
+                Pizza Size
+            </legend>
+            <p><label>
+                    <input type="radio" name="size" value="small">Small (10 inch)
+                </label></p>
+            <p><label>
+                    <input type="radio" name="size" value="medium">Medium (12 inch)
+                </label></p>
+            <p><label>
+                    <input type="radio" name="size" value="small">Large (15 inch)
+                </label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Pizza Toppings
+            </legend>
+            <p><label>
+                    <input type="checkbox" name="toppings" value="Bacon">Bacon
+                </label></p>
+            <p><label>
+                    <input type="checkbox" name="toppings" value="cheese">Extra Cheese
+                    <p><label>
+                            <input type="checkbox" name="toppings" value="onion">Onion
+                        </label></p>
+                    <p><label>
+                            <input type="checkbox" name="toppings" value="Mushroom">Mushroom
+                        </label></p>
+                    <p><label>
+                            <input type="checkbox" name="toppings" value="Chicken">Chicken
+                        </label></p>
+        </fieldset>
+        <fieldset>
+            <p>
+                Crust
+                <select name="crust">
+                    <option value="c1">Normal</option>
+                    <option value="c2" selected>chicago Deep Dish (+$2)</option>
+                    <option value="c3">New york Thin (+$2)</option>
+                </select>
+            </p>
+            <p><label>Delivery Instructions:
+                    <textarea name="comments" cols="50" rows="5" maxlength="1000">How do we get your house?</textarea>
+                </label></p>
+
+
+        </fieldset>
+        <p><button>Submit</button></p>
+        <!-- <p><input type="submit" value="Continue to step 2"></p>
+        <p><input type="reset" value="Reset Values"></p> -->
+
+    </form>
+</body>
+
+</html>
