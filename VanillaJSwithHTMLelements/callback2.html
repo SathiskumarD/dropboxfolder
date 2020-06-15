@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        function one(cbi) {
+            var cbi = confirm('Is this calling a callback function?');
+            if (!cbi) {
+                document.write('What are you trying to achieve?');
+            } else {
+                document.write('Good Luck');
+            }
+        }
+
+        function two(cbf) {
+            var cb = prompt("What is the name of the callback function?");
+            cbf(cb);
+        }
+        two(one);
+    </Script>
+
+</body>
+
+</html>
