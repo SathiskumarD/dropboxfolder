@@ -1,46 +1,50 @@
-let car={
-    make:'Toyota',
-    model:'RAV4',
-    year:2017,
-    getprice:function(){
-        //perform some calc//
-        return 31000;
-    },
-    printdescription: function(){
-        console.log(this.make+' ' +this.model)
+//Key and value pair
+let firstItem = {
+    id: 1,
+    name: "laptop",
+    price: 500
+}
+
+let secondItem = {
+    id: 1,
+    name: "Watch",
+    price: 250
+}
+console.log(`firstItem has a name of ${firstItem.name} and a price of ${firstItem.price}`);
+console.log(`firstItem has a name of ${firstItem["name"]} and a price of ${firstItem["price"]}`);
+
+const USD_EUR = 0.9;
+let thirdItem = {
+    id: 3,
+    name: "headphones",
+    brand: "Sony",
+    price: 100,
+    priceEUR: this.price * USD_EUR
+};
+
+console.log("Price of thirdItem in Euros: ", thirdItem.priceEUR); //NaN is expected because of "this".Only functions can be used
+let fourthItem = {
+    id: 3,
+    name: "headphones",
+    brand: "Sony",
+    price: 100,
+    priceEUR: function () {
+        return this.price * USD_EUR;
     }
+};
 
-}
+console.log("Price of fourthItem in Euros: ", fourthItem.priceEUR());
 
-car.printdescription();
-console.log(car.year);
-//console.log(car.printdescription());//
+//Removing the properties from Object//
 
+fourthItem.mfgCountry = "Canada";
 
-var anothercar={}
-anothercar.whatever='bob';
-console.log(anothercar.whatever);
+console.log(fourthItem);
 
-var a={
-    myproperty: {b: 'hi'}
-}
-console.log(a.myproperty.b);
+let fifthItem = new Object();
 
-var c={
-    myproperty: [ 
-        {d: 'this'},
-        {e: 'can'},
-        {f: 'get'},
-        {g: 'crazy'}
-    ]
-}
-
-console.log(c.myproperty[2]);
-
-let carlot=[
-    {year: 2017, make: 'Toyota',model:'4Runner'},
-    {year: 2015, make: 'BMW', model: '528i' },
-    {year: 1982, make:'Buick', model: 'skylark'},
-
-];console.log(carlot[0]);
-
+fifthItem.id = 5;
+fifthItem.name = "cellPhone";
+fifthItem.brand = "iPhone";
+fifthItem.price = 450;
+console.log(fifthItem);
