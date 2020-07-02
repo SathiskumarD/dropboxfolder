@@ -22,3 +22,7 @@ friends.forEach(friend => {
 friends.forEach((friend, index) => {
   console.log(friend, index);
 });
+
+for (var i = 0; i < friends.length; i++) {
+  console.log(friends.charAt(i));
+}
