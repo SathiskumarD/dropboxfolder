@@ -15,17 +15,17 @@ let s60Engine = {
     horsepower: 250
 }
 
-let yourCar = Object.assign(myCar, {
-    engine: s60Engine
-}); //engine is s60Engine
+// let yourCar = Object.assign(myCar, {
+//     engine: s60Engine
+// }); //engine is s60Engine
 
-let herCar = Object.freeze(myCar);
+// let herCar = Object.freeze(myCar);
 
-herCar.color = "Yellow";
-herCar.seats.color = "Red"; //It is possible to change the nested object
+// herCar.color = "Yellow";
+// herCar.seats.color = "Red"; //It is possible to change the nested object
 
-herCar.tyres = "Good year";
-herCar.seats.bucket = true;
+// herCar.tyres = "Good year";
+// herCar.seats.bucket = true;
 /*console.log("The effet of Object.freeze() method:\n");
 console.log("Her Car\n:", herCar);
 console.log("my Car\n:", myCar);

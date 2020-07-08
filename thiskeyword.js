@@ -5,7 +5,7 @@ console.log("window.age: ", window.age);
 console.log("this.age:", this.age);
 var age = 55;
 console.log("window.age: ", window.age);
-console.log("this.age:", age);
+console.log("age value:", age);
 let somefunction = () => this;
 console.log("this returned from a  function: ", somefunction());*/
 
@@ -18,6 +18,8 @@ let myCar = {
     console.log("this from myCar: ", this);
   },
 };
+
+//myCar.printDetails();
 
 let myVehicle = {
   make: "Honda",
@@ -41,7 +43,7 @@ let myVehicle = {
     },
   },
 };
-
+console.log("The fields of myCar:");
 myCar.printDetails();
 myVehicle.printDetails();
 myVehicle.engine.printDetails();
@@ -70,7 +72,7 @@ function printMyEngineDetails() {
 }
 
 //1st method using call method//
-printMycarDetails.call(myCar);
+printMycarDetails.call(myCar); //call function to link function to object
 printMyEngineDetails.call(myCar.engine);
 printMycarDetails.call(myVehicle);
 printMyEngineDetails.call(myVehicle.engine);

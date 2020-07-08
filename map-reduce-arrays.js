@@ -77,3 +77,21 @@ console.log("The reducer method yields the value for strings : " + sumALphabets)
 let householdItems = ["ladle", "spoon", "fryingpan", "rollingpin", "colander", "sieve", "Whisk", "Measuring spoon", "Teapot"];
 let filterHousehold = householdItems.filter(item => item.length > 5);
 console.log(filterHousehold);
+
+//combined operations of filter and reduce//
+
+let studentNames = ["John", "Joker", "James", "Jessica", "Amy", "knoxville", "Amerhest"];
+let sumStuNames = studentNames.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log(sumStuNames);
+let filterStuNames = studentNames.filter(names => names.match(/[J-O]/g));
+console.log(filterStuNames);
+
+let expensiveItems = items.filter(item => item.price >= 25);
+console.log("The expensive items are :", expensiveItems);
+let costofExpensiveItems = expensiveItems.reduce((accumulator, currentValue) => accumulator + currentValue.price, 0);
+console.log("Sum of Expensive Items : " + costofExpensiveItems);
+//Finding Unique values//
+let values = [3, 1, 4, 5, 6, 8, 3, 2, 4, 5, 6, 7, 8, 9, 0, 1, 3, 5, 6, 9, 4, 2];
+let setOfValues = new Set(values);
+let uniqueOfValues = [...setOfValues];
+console.log(uniqueOfValues);
