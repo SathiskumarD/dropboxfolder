@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phase-o-matic</title>
+</head>
+
+<body>
+    <script>
+        function makephrases() {
+            var verse1 = ["24/7", "multi-tier", "30-000,ft", "B-to-B", "win-win"];
+            var verse2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
+            var verse3 = ["process", "solution", "tipping-point", "startegy", "vision"];
+
+            var randVerse1 = Math.floor(Math.random() * verse1.length);
+            var randVerse2 = Math.floor(Math.random() * verse2.length);
+            var randVerse3 = Math.floor(Math.random() * verse3.length);
+
+            return phrase = document.write(verse1[randVerse1] + " " + verse2[randVerse2] + " " + verse3[randVerse3]);
+
+        }
+
+        makephrases();
+    </script>
+</body>
+
+</html>

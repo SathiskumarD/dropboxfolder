@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var drink = "Sugar Cane Juice";
+        var cans = 0;
+        do {
+            text = cans + "  cans of  " + drink + " on the wall <br>";
+            text = text + cans + " cans of " + drink + "<br>";
+            document.write(text);
+            ++cans;
+            if (cans == 50) {
+                document.write("Half-way THROUGH <br>");
+            } else if (cans == 99) {
+                document.write("That's ENOUGH <br>");
+            } else {
+                document.write("SugarCane is so Sweet!!! <br>");
+            };
+
+
+        }
+
+        while (cans <= 99);
+    </script>
+</body>
+
+</html>
