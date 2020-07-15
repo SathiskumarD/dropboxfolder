@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knowingfunctions</title>
+</head>
+
+<body>
+    <script>
+        var guessInput = document.getElementById("guess").value;
+        var answer = function checkGuess(guess) {
+            var answers = [
+                "red",
+                "green",
+                "blue"
+            ]
+            var index = Math.floor(Math.random * answers.length);
+            if (guess == answers[index]) {
+                answer = "You are right!I was thinking of  " + answers[index];
+            } else {
+                answer = "I was thinking of  " + answers[index];
+            }
+            return (answer);
+        }
+        alert(answer);
+        //THIS CODE WON'T WORK//
+    </script>
+
+</body>
+
+</html>
