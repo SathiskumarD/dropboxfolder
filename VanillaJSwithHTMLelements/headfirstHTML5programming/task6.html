@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var compV=(5>4)?true:false;
+        var compV=Boolean(5>4);
+        //var stringV=("apple">"pineapple")?true:false;
+        var stringV=Boolean("apple">"pineapple");
+        var striConV=("2">"12")?true:false;
+        var unDenull=(undefined==null)?true:false;
+        var unDenullStrict=(undefined===null)?true:false;
+        var nullDe=(null=="\n0\n");
+        var nullDeStrict=(null===+"\n0\n");
+        document.write("comparison between variables 4 and 5 is "+ compV + "<br> Comparing two strings apple and pineapple is "+stringV+"<br>Comparing number strings 2 and 12 is  "+striConV+"<br> comparing undefined and null  "+unDenull+"<br>comparing null in stricter way   "+unDenullStrict+"<br>Comparing null defined  "+nullDe+"<br>comparing null defined in stricter ways   "+nullDeStrict);
+//document.write("Boolean value for this expression is  " + compV);
+    </script>
+</body>
+</html>

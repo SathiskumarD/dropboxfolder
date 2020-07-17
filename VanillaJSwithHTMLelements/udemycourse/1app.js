@@ -1,0 +1,12 @@
+let message = "Hello World";
+console.log(message);
+message = "New value";
+console.log(message);
+console.log(message);
+console.log(message);
+let val = 'string variable';
+val = 'updated';
+let val1 = 400;
+val1 = 'String';
+console.log(val);
+console.log(val1);

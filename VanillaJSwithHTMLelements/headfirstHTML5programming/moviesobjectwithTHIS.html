@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var movie1 = {
+            title: "Tinker Tailor Soldier Spy",
+            genre: "Drama Mystery Spy Thriller",
+            rating: 4.5,
+            showtimes: ["10.00am", "1.00pm", " 4.00pm", "7.00pm", "10.00pm"],
+            getNextShowing: function () { // we don't need movie argument here in the function
+                var now = new Date().getTime(); //we need to learn this concept
+                for (var i = 0; i < this.showtimes.length; i++) {
+                    var showtime = getTimeFromString(this.showtimes[i]);
+                    if ((showtime - now) > 0) {
+                        return "Next showing of " + this.title + " is " + this.showtimes[i];
+                    }
+
+                }
+                return null;
+            }
+        }
+        var movie2 = {
+            title: "Sherlock Holmes",
+            genre: "Drama Mystery Spy Thriller",
+            rating: 4.5,
+            showtimes: ["10.00am", "11.30am", " 1.00pm", "3.30pm", "5.00pm", "6.30pm"],
+            getNextShowing: function () { // we don't need movie argument here in the function
+                var now = new Date().getTime(); //we need to learn this concept
+                for (var i = 0; i < this.showtimes.length; i++) {
+                    var showtime = getTimeFromString(this.showtimes[i]);
+                    if ((showtime - now) > 0) {
+                        return "Next showing of " + this.title + " is " + this.showtimes[i];
+                    }
+
+                }
+                return null;
+            }
+        }
+        //ready baked code is very hard to understand//
+        function getTimeFromString(timeString) {
+            var theTime = new Date();
+            var time = timeString.match(/(\d+)(?::(\d\d))?\s*(p?)/);
+            theTime.setHours(parseInt(time[1]) + (time[3] ? 12 : 0));
+            theTime.setMinutes(parseInt(time[2]) || 0);
+            return theTime.getTime();
+        }
+        document.write(movie2.getNextShowing());
+    </script>
+</body>
+
+</html>
