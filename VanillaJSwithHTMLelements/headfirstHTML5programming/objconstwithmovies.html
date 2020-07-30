@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //This code is NOT working
+        function getTimeFromString(timeString) {
+            var theTime = new Date();
+            var time = timeString.match(/(\d+)(?::(\d\d))?\s*(p?)/);
+            theTime.setHours(parseInt(time[1]) + (time[3] ? 12 : 0));
+            theTime.setMinutes(parseInt(time[2]) || 0);
+            return theTime.getTime();
+        }
+
+        function Movie(title, genre, rating, showtimes) {
+            this.title = title;
+            this.genre = genre;
+            this.rating = rating;
+            this.showtimes = showtimes;
+            this.getNextShowing = function () {
+                var now = new Date().getTime();
+                for (var i = 0; i < this.showtimes.length; i++) {
+                    var showtime = getTimeFromString(this.showtimes[i]);
+                    if ((showtime - now) > 0) {
+                        return " Next showing of " + this.title + "is" + this.showtimes[i];
+                    }
+                }
+            };
+        }
+        var sherlockHolmes = new Movie("SH", "Spy-thriller", 4.1, ["10:00am", "12:30pm", "3:30pm", "5:30pm", "8:00pm"
+            "10:00pm", "0:00am"
+        ]);
+        sherlockHolmes.getNextShowing();
+    </script>
+</body>
+
+</html>

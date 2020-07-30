@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Geolocation Details from W3Schools</title>
+    <script>
+        /* function browserDetails() {
+            document.getElementById("browserlocation").innerHTML = "Browser name : \n" + navigator.appCodeName +
+                " <br>  Browser name: \n" + navigator.appName +
+                "<br>Browser version : \n" + navigator.appVersion + "<br> The language of my browser is :\n" +
+                navigator
+                .language;
+        } */
+
+        function myLocation() {
+            var location = navigator.geolocation.getCurrentPosition(showPosition);
+            if (location) {
+                document.write("Browser location will be identified soon")
+            } else {
+                document.write("Geolocation object is not supported in this browser")
+            }
+        }
+
+        function showPosition(pos) {
+            document.getElementById("location").innerHTML = "Latitude is \n" + pos.coords.latitude +
+                " <br> Longitude is \n" + pos.coords.longitude;
+        }
+        window.onload = myLocation();
+    </script>
+</head>
+
+
+
+<body>
+    <p>
+        <h2><strong>
+                Contact
+            </strong>
+        </h2>
+        <br>4611 Governors House Dr SW
+        <br>Apt 215
+        <br>Huntsville AL 35805
+        <div id="location"></div>
+
+
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13118.185884783197!2d-86.63087485!3d34.716617400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595900712994!5m2!1sen!2sus"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+
+
+
+    </p>
+
+</body>
+
+</html>

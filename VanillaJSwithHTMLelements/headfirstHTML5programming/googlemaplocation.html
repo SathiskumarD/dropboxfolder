@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Google map Demo</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Google map Demo</h2>
+    <div id='map'></div>
+    <script>
+        //my location
+        /* function myLocation() {
+            var location = navigator.geolocation;
+            if (location) {
+                location.getCurrentPosition(showPosition);
+            } else {
+                document.write("Geolocation object is not supported in this browser")
+            }
+        }
+
+        function showPosition(pos) {
+            var myGPS = {
+                lat: pos.coords.latitude,
+                long: pos.coords.longitude
+            };
+            document.write("latitude :\n" + myGPS.lat + "<br>longitude :\n " + myGPS.long);
+        }
+        window.onload = myLocation(); */
+
+        /* var myGPS = {
+            location: function () {
+                navigator.geolocation.getCurrentPosition(this.showPosition);
+
+            },
+            showPosition: function (pos) {
+                var lat = pos.coords.latitude;
+                var lng = pos.coords.longitude;
+                document.write("latitude:\n" + lat + "<br>longitude:\n" +
+                    lng);
+
+
+            },
+        }; */
+
+        function initmap() {
+            var options = {
+                zoom: 4,
+                center: {
+                    lat: 34.7078,
+                    lng: -86.6287
+                }
+
+            };
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhWrPc09gqOZa3c7B1-ICTj7ku6Jd0zlo&callback=initMap">
+    </script>
+</body>
+
+</html>
