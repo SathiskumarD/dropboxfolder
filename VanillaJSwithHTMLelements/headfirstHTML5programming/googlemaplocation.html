@@ -15,26 +15,26 @@
 
 <body>
     <h2>My Google map Demo</h2>
-    <div id='map'></div>
+    <div id="map"></div>
     <script>
         //my location
         /* function myLocation() {
-            var location = navigator.geolocation;
-            if (location) {
-                location.getCurrentPosition(showPosition);
-            } else {
-                document.write("Geolocation object is not supported in this browser")
-            }
+        var location = navigator.geolocation;
+        if (location) {
+        location.getCurrentPosition(showPosition);
+        } else {
+        document.write("Geolocation object is not supported in this browser")
+        }
         }
 
         function showPosition(pos) {
-            var myGPS = {
-                lat: pos.coords.latitude,
-                long: pos.coords.longitude
-            };
-            document.write("latitude :\n" + myGPS.lat + "<br>longitude :\n " + myGPS.long);
-        }
-        window.onload = myLocation(); */
+        var myGPS = {
+        lat: pos.coords.latitude,
+        lng: pos.coords.longitude
+        };
+        document.write("latitude :\n" + myGPS.lat + "<br>longitude :\n " + myGPS.lng);
+        } */
+        // window.onload = myLocation();
 
         /* var myGPS = {
             location: function () {
@@ -44,26 +44,26 @@
             showPosition: function (pos) {
                 var lat = pos.coords.latitude;
                 var lng = pos.coords.longitude;
-                document.write("latitude:\n" + lat + "<br>longitude:\n" +
+                document.write("lat:\n" + lat + "<br>lng:\n" +
                     lng);
 
 
             },
         }; */
-
-        function initmap() {
-            var options = {
+        //window.onload = myGPS.location();
+        function initMap() {
+            var optionsVar = {
                 zoom: 4,
                 center: {
-                    lat: 34.7078,
-                    lng: -86.6287
-                }
+                    lat: 34.023,
+                    lng: -76.023
+                } //you have to HARD CODE latitude and longitude in this place
+            }
 
-            };
-            var map = new google.maps.Map(document.getElementById('map'), options);
+            var map = new google.maps.Map(document.getElementById("map"), optionsVar);
         }
     </script>
-    <script defer
+    <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhWrPc09gqOZa3c7B1-ICTj7ku6Jd0zlo&callback=initMap">
     </script>
 </body>
