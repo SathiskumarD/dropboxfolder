@@ -14,6 +14,9 @@ const firstName = "Sathishkumar";
 const nameArray = ['Sathishkumar', 'Dharmalingam']
 const lastName = "Dharmalingam";
 const age = 38;
+const str = 'Welcome to JavaScript coding';
+const tag = 'web design,web development,programming';
+
 val1 = firstName.slice(0, 4);
 val2 = firstName.slice(-3);
 val3 = firstName + ' ' + lastName; //concat
@@ -42,6 +45,9 @@ val18 = firstName.substring(0, 4);
 val19 = firstName.slice(0, 4);
 val20 = firstName.slice(-3);
 //split()
+val21 = str.split(' '); //convert string to Array
+//tag()
+val22 = tag.split(' , '); //convert string to Array
 
 
 
@@ -66,3 +72,5 @@ console.log(val17);
 console.log(val18);
 console.log(val19);
 console.log(val20);
+console.log(val21);
+console.log(val22);
