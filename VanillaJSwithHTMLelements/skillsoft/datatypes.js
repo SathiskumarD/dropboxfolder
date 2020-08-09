@@ -48,6 +48,10 @@ val20 = firstName.slice(-3);
 val21 = str.split(' '); //convert string to Array
 //tag()
 val22 = tag.split(' , '); //convert string to Array
+//replace()
+val23 = str.replace('Welcome', 'gratissimum');
+//includes()
+val24 = str.includes('foo');
 
 
 
@@ -74,3 +78,5 @@ console.log(val19);
 console.log(val20);
 console.log(val21);
 console.log(val22);
+console.log(val23);
+console.log(val24); //returns boolean value
