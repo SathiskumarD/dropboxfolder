@@ -23,7 +23,7 @@ for (let i = 0; i < 10; i++) {
   }
   console.log(`Number` + i);
 }
-//WHILE
+//WHILE loop
 
 let i = 0;
 
