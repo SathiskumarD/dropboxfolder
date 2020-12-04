@@ -59,7 +59,7 @@ console.log(name); */
 console.log(person); */
 //primitive
 //string
-const name = "Johnny Doe";
+/* const name = "Johnny Doe";
 console.log(typeof name);
 //number
 const age = "39";
@@ -89,7 +89,7 @@ console.log(typeof address);
 const today = new Date();
 console.log(today);
 console.log(typeof today);
-
+ */
 /* let val;
 //Number to String
 val = String(555);
@@ -140,21 +140,21 @@ val = Math.max(2, 33, 4, 1, 55, 6, -10);
 val = Math.random();
 val = Math.floor(Math.random() * 20 + 1); //1-20 random number including 20; */
 
-const firstname = "Sathishkumar";
+/* const firstname = "Sathishkumar";
 const lastName = "Dharmalingam";
 const str = "hello there my name is sathish";
-let val;
+//let val;
 val = firstname + lastName;
 //concatenation
 val = firstname + " " + lastName;
 //Appending
 val = "Sathish ";
 val += "Dharmalingam";
-val = "Hello my name is " + firstname + " and I am " + age;
+val = "Hello my name is " + firstname + " and I am " + age; */
 
 //Escaping
 
-val = "Sathishkumar";
+/* val = "Sathishkumar";
 val += "Dharmalingam";
 val = "That's awesome,I can't wait";
 
@@ -192,7 +192,7 @@ const name1 = "John";
 const age1 = 49;
 const job = "Web developer";
 const city = "Huntsville";
-let html;
+let html; */
 
 //without template strings ()-ES5 way
 /* html =
@@ -219,7 +219,7 @@ html =
   "</li></ul>";
  */
 //with template Strings
-function hello() {
+/* function hello() {
   return "hello";
 }
 
@@ -231,7 +231,7 @@ html = `<ul><li>Name: ${name1}</li>
   <li>${hello()}</li>
   <li>Eligible to watch porn: ${age1 > 30 ? "Yes" : "No"}</li>
   </ul>`;
-document.body.innerHTML = html;
+document.body.innerHTML = html; */
 
 //create some arrays
 const numbers = [43, 56, 23, 33, 44, 36, 5];
@@ -247,7 +247,7 @@ const mixed = [
   { a1: 1, b1: 2 },
   new Date(),
 ];
-let val1;
+//let val1;
 
 //Array length
 val1 = numbers.length;
@@ -287,9 +287,30 @@ function under50(num) {
 }
 val = numbers1.find(under50);
 
-/* console.log(numbers);
+const person = {
+  firstName: "Steve",
+  lastname: "Jobs",
+  yearOfBirth: 1952,
+  email: "stevejobs@apple.com",
+  //hobbies=['music','sports'],
+  address: {
+    city: "Miami",
+    state: "FL",
+  },
+  getAge: function () {
+    currentDate = new Date();
+    getYear = currentDate.getFullYear();
+    age = getYear - this.yearOfBirth;
+    return age;
+  },
+};
+let val2;
+val2 = person;
+val2 = person.getAge(); /* console.log(numbers);
 console.log(numbers1); */
-console.log(val);
+/* let daTeofYear = new Date();
+console.log(daTeofYear);
+ */ console.log(val2);
 /* console.log(val1); */
 
 //console.log(val.length); //length only works on string
@@ -301,3 +322,25 @@ const val2 = 6;
 const sum = val1 + val2; */
 /* console.log(sum);
 console.log(typeof sum); */
+let val3;
+const today = new Date();
+let birthDay = new Date("9-14-1981 10:20:00");
+//birthDay = new Date("September 14 1981");
+val3 = birthDay.getMonth(); //0 based i.e. if it is january, it is zero and february is 1
+val3 = birthDay.getDate();
+val3 = birthDay.getDay();
+val3 = birthDay.getFullYear();
+val3 = birthDay.getHours();
+val3 = birthDay.getMinutes();
+val3 = birthDay.getUTCDate();
+val3 = today.getMilliseconds();
+val3 = today.getTime();
+val3 = birthDay.setMonth(2);
+val3 = birthDay.setFullYear(1989);
+val3 = birthDay.setHours(11);
+val3 = birthDay.setSeconds(25);
+console.log(birthDay);
+
+//val3 = birthDay.toString();
+console.log(val3);
+//console.log(typeof val3);
