@@ -324,11 +324,11 @@ const sum = val1 + val2; */
 console.log(typeof sum); */
 let val3;
 const today = new Date();
-let birthDay = new Date("9-14-1981 10:20:00");
-//birthDay = new Date("September 14 1981");
-val3 = birthDay.getMonth(); //0 based i.e. if it is january, it is zero and february is 1
+//let birthDay = new Date("9-14-1981 10:20:00");
+birthDay = new Date("September 14 1981");
+/* val3 = birthDay.getMonth(); //0 based i.e. if it is january, it is zero and february is 1
 val3 = birthDay.getDate();
-val3 = birthDay.getDay();
+//val3 = birthDay.getDay();
 val3 = birthDay.getFullYear();
 val3 = birthDay.getHours();
 val3 = birthDay.getMinutes();
@@ -338,8 +338,9 @@ val3 = today.getTime();
 val3 = birthDay.setMonth(2);
 val3 = birthDay.setFullYear(1989);
 val3 = birthDay.setHours(11);
-val3 = birthDay.setSeconds(25);
-console.log(birthDay);
+val3 = birthDay.setSeconds(25); */
+val3 = today.getDay();
+//console.log(bitoday
 
 //val3 = birthDay.toString();
 console.log(val3);

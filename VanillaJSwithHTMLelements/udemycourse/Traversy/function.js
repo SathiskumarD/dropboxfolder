@@ -1,8 +1,10 @@
-function greet(name) {
+/* function greet(name) {
   //console.log("Hello");
-  return "Hello " + name;
+  //return "Hello " + name;
+  document.write(`Hello  ${name}`);
 }
-console.log(greet("Sathish"));
+//console.log(greet("Sathish"));
+greet("Sathish"); */
 
 function greet(firstName, lastName) {
   if (typeof firstName === "undefined") {
@@ -11,12 +13,13 @@ function greet(firstName, lastName) {
   if (typeof lastName === "undefined") {
     lastName = "Doe";
   }
-  return "Hello " + firstName + "  " + lastName;
+  //return "Hello " + firstName + "  " + lastName;
+  document.write(`Hello ${firstName} ${lastName}`);
 }
-console.log(greet());
+//console.log(greet());
 //To overwrite the default
-console.log(greet("Steve", "Smith"));
-
+greet("Steve", "Smith");
+/*
 //In ES6
 
 function greet(firstName = "John", lastName = "Doe") {
@@ -29,14 +32,15 @@ function greet(firstName = "John", lastName = "Doe") {
   return "Hello " + firstName + "  " + lastName;
 }
 console.log(greet());
-
+*/
 //Function Expressions
 
 const square = function (x) {
   return x * x;
 };
 
-console.log(square(4));
+//console.log(square(4));
+document.write("<br> The value of 16 square is " + square(16));
 
 //IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFES
 (function () {
@@ -47,7 +51,7 @@ console.log(square(4));
   console.log("Welcome " + name + " to IIFE - This is Wonderful");
 })("Sathish");
 
-//Properties & Methods
+//Property Methods(when function is inside the object)//
 
 let todo = {
   add: function (a, b) {
@@ -60,6 +64,10 @@ let todo = {
     console.log(a - b);
   },
 };
+todo.delete = function () {
+  document.write(`<br>Delete todo..`);
+};
 todo.add(65, 35);
 todo.subtract(65, 35);
 todo.edit(22);
+todo.delete();
