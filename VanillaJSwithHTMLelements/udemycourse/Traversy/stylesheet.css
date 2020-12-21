@@ -1,12 +1,32 @@
 body{
+    
     color:blue;
     font-size:20px;
-    background-color:lightblue;
+    background-color:#808080;
     text-align:justify;
-    
+}
+    @media screen and (min-width:400px){
+        body{
+            background-color: lightgreen;
+        }
     }
-{
+    @media screen and (min-width:800px){
+        body{
+            background-color:lavender;
+        }
+    }
+    
+    
+     /* *{
+        width: 500px;
+        height: 80px;
+        text-align:justify;
+        font-size: 25px;
+        color:black;
+        margin-bottom: 0px;
+    } */
+/* {
     height:200px;
     width:100px;
     
-}
+} */
