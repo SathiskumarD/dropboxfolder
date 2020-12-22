@@ -1,4 +1,4 @@
-document.getElementById();
+//document.getElementById();
 
 console.log(document.getElementById("task-title"));
 
@@ -9,14 +9,14 @@ console.log(document.getElementById("task-title").className);
 // Change styling
 const taskTitle = document.getElementById("task-title");
 
-taskTitle.style.background = "blue";
-// taskTitle.style.color = '#fff';
-// taskTitle.style.padding = '5px';
-// // taskTitle.style.display = 'none';
+taskTitle.style.background = "green";
+taskTitle.style.color = "#fff";
+taskTitle.style.padding = "5px";
+//taskTitle.style.display = "none";
 
 // // Change content
-// taskTitle.textContent = 'Task List';
-// taskTitle.innerText = 'My Tasks';
+taskTitle.textContent = "Task List";
+//taskTitle.innerText = "My Tasks";
 // taskTitle.innerHTML = '<span style="color:red">Task List</span>';
 
 /* document.querySelector()
