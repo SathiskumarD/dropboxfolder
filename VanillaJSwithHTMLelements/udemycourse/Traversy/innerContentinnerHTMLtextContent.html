@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>difference between innerHTML innerText textContent </title>
+</head>
+
+<body>
+    <button onclick="getinnerHTML()">Get Inner HTML</button>
+    <button onClick="getinnerText()">Get Inner Text</button>
+    <button onclick="gettextContent()">Get Text Content</button>
+    <div id="demo">
+        this element is <strong> strong</strong> and has<> some super fun <code>code</code>!
+    </div>
+    <script>
+        const getValue = document.getElementById("demo");
+        //getValue.innerHTML;
+        //getValue.innerText;
+        //getValue.textContent;
+        function getinnerHTML() {
+            alert(getValue.innerHTML)
+        }
+
+        function getinnerText() {
+            alert(getValue.innerText)
+        }
+
+        function gettextContent() {
+            alert(getValue.textContent)
+        }
+    </script>
+
+</body>
+
+</html>
