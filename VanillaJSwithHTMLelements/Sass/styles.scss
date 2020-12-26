@@ -1,0 +1,15 @@
+$primaryBtn:rgb(91, 56, 146) ;//This is JS
+$textColor:white;
+
+@import 'header';
+// header button {
+//     background:$primaryBtn; //if you want to change the color do modify "primaryBtn"
+// }
+
+.contact button {
+    
+//     @include flexCenter(column,red);
+@extend header;
+width:auto;
+}
+

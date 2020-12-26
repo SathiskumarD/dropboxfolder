@@ -1,0 +1,32 @@
+@mixin flexCenter($direction,$background) {
+    height:3vh;
+  display: flex;
+  justify-content: center;
+  color: $textColor;
+  font-weight:300px;
+  flex-direction: $direction;
+  background:$background;
+}
+
+
+
+
+header {
+    
+    background: grey;
+    height:3vh;
+    align-items: center;
+
+    button {
+        background: $primaryBtn;
+
+        &:hover {
+            background: red;
+
+        }
+
+        &::after {
+            content: "How are you?";
+        }
+    }
+}

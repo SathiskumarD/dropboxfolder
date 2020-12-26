@@ -1,0 +1,24 @@
+header, .contact button {
+  background: grey;
+  height: 3vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header button, .contact button button {
+  background: #5b3892;
+}
+
+header button:hover, .contact button button:hover {
+  background: red;
+}
+
+header button::after, .contact button button::after {
+  content: "How are you?";
+}
+
+.contact button {
+  width: auto;
+}
+/*# sourceMappingURL=styles.css.map */
