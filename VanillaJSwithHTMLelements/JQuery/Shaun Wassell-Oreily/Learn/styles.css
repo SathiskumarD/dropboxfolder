@@ -27,8 +27,8 @@ code {
 div{
    font-weight:bold;
    color:black;
-    width:200px;
-    height:200px;
+    width:400px;
+    height:400px;
     border:1px solid black;
     text-align:center;
     position:relative;
@@ -58,7 +58,7 @@ p{
     
 
 }
- table,tr,td{
+ table,tr,td,th{
     border:1px solid black;
     padding:"10";
 } 

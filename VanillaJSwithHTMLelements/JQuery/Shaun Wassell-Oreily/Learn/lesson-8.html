@@ -10,21 +10,20 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-
             $("#click-me-button").click(function () {
-                alert($(this).text());
-                alert($("#my-input").val());
-                alert($("#my-div").html());
+                alert($("#my-div").css("width"));
+                $("#my-div").css('color', 'red').css('background-color', 'lightblue');
             })
         });
     </script>
-    <title>Learning J Query - Lesson 6 -retrieving contents of HTML page</title>
+    <title>Learning J Query - Lesson 8 </title>
 
 <body>
+    <h1>Retrieving and Seting CSS Properties</h1>
     <button id="click-me-button">Click Me!</button>
+
     <div id="my-div">
-        <br> welcome-text!<br>
-        <input id="my-input" type="text" placeholder="Enter your name" value="My input value">
+        welcome-text!
     </div>
 
 </body>
