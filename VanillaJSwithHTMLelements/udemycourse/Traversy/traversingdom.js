@@ -1,4 +1,4 @@
-let val1;
+/* let val1;
 const list = document.querySelector("ul.collection");
 const listItem = document.querySelector("li.collection-item:first-child");
 //val1 = listItem;
@@ -19,7 +19,7 @@ val4 = list.childNodes[3].nodeType; //The value of 3 is obtained from childNodes
 
 //Get children element nodes
 //Childern gives only elements.So always use children
-val5 = list.children;
+/* val5 = list.children;
 val6 = list.children[1];
 list.children[1].textContent = "Hello";
 //Children of children
@@ -63,3 +63,27 @@ console.log(val16);
 console.log(val17);
 console.log(val18);
 console.log(val19);
+ */
+
+let val;
+const list = document.querySelector("ul.collection");
+const listItem = document.querySelector("li.collection-item:first-child");
+val = listItem;
+val = list;
+//get child nodes
+val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[0].nodeName;
+//val = list.childNodes[0].nodeType;
+/* 1-Element
+2-Attribute(deprecated)
+3-Text Node
+8-Comment
+9-Document itself
+10-DocType
+ */
+// val = list.childNodes[3].nodeType;
+//get children element nodes
+//val = list.children;
+
+console.log(val);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Of-Array in JS</title>
+</head>
+
+<body>
+    <h1>Index of Array</h1>
+    <script>
+        function updateVegetables(veggies, veggie) {
+
+            if (veggies.indexOf(veggie) === -1) {
+                veggies.push(veggie);
+                document.write(`${veggie} is added to the list and here is the new list <br>${veggies}`);
+            } else {
+                document.write(`${veggie} already exists in the array`);
+            }
+        }
+        var veggies = ["potato", "tomato", "chillies", "green-pepper"];
+        updateVegetables(veggies, "brinjal");
+    </script>
+
+</body>
+
+</html>
