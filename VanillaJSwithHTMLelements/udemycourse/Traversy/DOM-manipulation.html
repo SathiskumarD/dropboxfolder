@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation
+
+    </title>
+</head>
+
+<body>
+    <h1 id="intro">Hello</h1>
+    <button onClick="myFunction()">Click Me!</button>
+    <script type="text/javascript">
+        function myFunction() {
+            const text = document.getElementById("intro");
+            text.textContent = "Welcome to my Page";
+
+            function getRandomcolor() {
+                var letters = '0123456789ABCDEF';
+                var color = "#";
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            /* function getRandomcolor() {
+                var colorRand = 'rgb';
+                var newNum = Array.from(new Array(3), (x, i) => {
+                    x = [Math.floor(Math.random() * 255)];
+                });
+                return colorRand += `(${newNum})`;
+            }*/
+            text.style.color = getRandomcolor();
+
+        }
+    </script>
+
+</body>
+
+
+</html>
