@@ -1,0 +1,20 @@
+.container{
+    height:auto;
+    background-color:lightgrey;
+    position:relative;
+    border: 2px solid black;
+    display:block;
+    text-align:center;
+    margin:100px;
+    padding:50px;
+}
+.a{
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -ms-transform:translate(-50%,-50%);
+    transform:translateY(-50%,-50%);
+    text-align:center;
+
+}
