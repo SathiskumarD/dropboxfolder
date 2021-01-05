@@ -9,10 +9,13 @@ function myFunction1() {
 
   if (computerChoice == myChoice.textContent) {
     choice3.textContent = "Tie!";
+    choice3.style.color = "grey";
   } else if (computerChoice == "paper") {
     choice3.textContent = "You lose!";
+    choice3.style.color = "red";
   } else if (computerChoice == "scissor") {
     choice3.textContent = "You Win!";
+    choice3.style.color = "blue";
   }
   choice1.textContent = computerChoice;
 }
@@ -23,10 +26,13 @@ function myFunction2() {
 
   if (computerChoice == myChoice.textContent) {
     choice3.textContent = "Tie!";
+    choice3.style.color = "grey";
   } else if (computerChoice == "rock") {
     choice3.textContent = "You Win!";
+    choice3.style.color = "blue";
   } else if (computerChoice == "scissor") {
     choice3.textContent = "You lose!";
+    choice3.style.color = "red";
   }
   choice1.textContent = computerChoice;
 }
@@ -35,10 +41,13 @@ function myFunction3() {
   myChoice.textContent = "scissor";
   if (computerChoice == myChoice.textContent) {
     choice3.textContent = "Tie!";
+    choice3.style.color = "grey";
   } else if (computerChoice == "rock") {
     choice3.textContent = "You lose!";
+    choice3.style.color = "red";
   } else if (computerChoice == "paper") {
     choice3.textContent = "You Win!";
+    choice3.style.color = "blue";
   }
   choice1.textContent = computerChoice;
 }

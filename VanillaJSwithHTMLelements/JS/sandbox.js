@@ -55,6 +55,25 @@ people.forEach((person) => {
   divE.innerHTML += `<p>${person}</p>`;
 }); */
 
-const link = document.querySelector("a");
+/* const link = document.querySelector("a");
 console.log(link.getAttribute("href"));
 link.setAttribute("href", "https://www.yahoo.com");
+link.innerText = "The Net Ninja Website";
+
+const mssg = document.querySelector("p");
+console.log(mssg.getAttribute("class"));
+mssg.setAttribute("class", "success");
+mssg.setAttribute("style", "color:blue");
+const title = document.querySelector("h1");
+//title.setAttribute("style", "margin:50px");
+console.log(title.style);
+console.log(title.style.color);
+title.style.color = "brown";
+title.style.margin = "50px";
+title.style.fontSize = "55px";
+title.style.color = ""; */
+
+const content = document.querySelector("p");
+console.log(content.classList);
+content.classList.add("error");
+content.classList.remove("success");
