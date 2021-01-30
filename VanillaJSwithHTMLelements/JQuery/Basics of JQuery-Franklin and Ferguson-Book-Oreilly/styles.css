@@ -1,0 +1,29 @@
+#box {
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    background:grey;
+    font-size: 14px;
+    display: block;
+    font-size:20px;
+    flex:auto;
+}
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+td {
+    padding: 10px;
+}
+
+/* #box{
+    width:200px;
+    height:200px;
+    background:red;
+} */

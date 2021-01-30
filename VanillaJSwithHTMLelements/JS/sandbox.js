@@ -73,7 +73,21 @@ title.style.margin = "50px";
 title.style.fontSize = "55px";
 title.style.color = ""; */
 
-const content = document.querySelector("p");
+/* const content = document.querySelector("p");
 console.log(content.classList);
 content.classList.add("error");
 content.classList.remove("success");
+ */
+
+const paras = document.querySelectorAll("p");
+paras.forEach((p) => {
+  //var textInsideP = para.getElementsByTagName("p").textContent;
+  if (p.textContent.includes("success")) {
+    p.classList.add("success");
+  } else {
+    p.classList.add("error");
+  }
+});
+
+const heade1 = document.querySelector("h1");
+heade1.classList.toggle("test");
