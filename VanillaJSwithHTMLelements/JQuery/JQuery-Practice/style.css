@@ -1,0 +1,15 @@
+div {
+  color: blue;
+  font-size: 25px;
+  text-align: center;
+  background-color: white;
+}
+body{
+  background-color:lightgrey;
+width:auto;
+height:auto;
+margin:auto;
+padding:inherit;
+text-decoration: none;
+text-align: center;;
+}
